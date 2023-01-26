@@ -1,0 +1,14 @@
+<div class="row mt-2">
+    <div class="col-md-4 col-sm-6" *ngFor="let item of resultados">
+        <div class="card">
+            <div class="card-body">
+                <img 
+                [src]="item.images.downsized_medium.url"
+                class="card-img-top"
+                [alt]="item.title"
+                >
+            </div>
+            <h3>{{item.title}}</h3>
+        </div>
+    </div>
+</div>
